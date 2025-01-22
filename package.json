@@ -1,6 +1,6 @@
 {
   "name": "@code-sugar/slidev-theme-portrait",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "keywords": [
     "slidev-theme",
@@ -8,7 +8,7 @@
   ],
   "engines": {
     "node": ">=18.0.0",
-		"slidev": ">=0.48.0"
+    "slidev": ">=0.48.0"
   },
   "scripts": {
     "build": "slidev build example.md",
@@ -26,13 +26,13 @@
   "slidev": {
     "colorSchema": "both",
     "defaults": {
-			"aspectRatio": "9/16",
-			"layout": "portrait",
-			"codeCopy": false,
+      "aspectRatio": "9/16",
+      "layout": "portrait",
+      "codeCopy": false,
       "fonts": {
         "sans": "Nunito Sans",
         "mono": "Fira Code"
-			}
+      }
     }
   }
 }
