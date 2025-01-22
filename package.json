@@ -14,7 +14,8 @@
     "build": "slidev build example.md",
     "dev": "slidev example.md --open",
     "export": "slidev export example.md",
-    "screenshot": "slidev export example.md --format png"
+    "screenshot": "slidev export example.md --format png",
+    "release": "npm publish --registry https://registry.npmjs.org --access public"
   },
   "dependencies": {
     "@slidev/types": "^51.0.2"
