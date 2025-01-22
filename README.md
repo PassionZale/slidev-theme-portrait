@@ -1,6 +1,6 @@
 # slidev-theme-portrait
 
-[![NPM version](https://img.shields.io/npm/v/slidev-theme-portrait?color=3AB9D4&label=)](https://www.npmjs.com/package/@code-sugar/slidev-theme-portrait)
+[![NPM version](https://img.shields.io/npm/v/@code-sugar/slidev-theme-portrait?color=3AB9D4&label=)](https://www.npmjs.com/package/@code-sugar/slidev-theme-portrait)
 
 A slide portrait theme for record portrait video.
 
