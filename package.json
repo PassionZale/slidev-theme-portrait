@@ -1,17 +1,17 @@
 {
   "name": "@code-sugar/slidev-theme-portrait",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "description": "A slide portrait theme for record portrait video.",
-	"author": "Lei Zhang",
+  "author": "Lei Zhang",
   "email": "whouu@qq.com",
-	"license": "MIT",
+  "license": "MIT",
   "homepage": "https://github.com/PassionZale/slidev-theme-portrait#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PassionZale/slidev-theme-portrait.git"
   },
-  "bugs": "https://github.com/PassionZale/slidev-theme-portrait/issues",	
+  "bugs": "https://github.com/PassionZale/slidev-theme-portrait/issues",
   "keywords": [
     "slidev-theme",
     "slidev"
