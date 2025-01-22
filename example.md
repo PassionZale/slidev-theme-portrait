@@ -47,15 +47,23 @@ Hover on the bottom-left corner to see the navigation's controls panel
 | <kbd>down</kbd> | next slide |
 
 ---
-layout: image-right
-image: https://cover.sli.dev
 ---
 
 # Code
 
 Use code snippets and get the highlighting directly!
 
+<AutoFitText>
+
 ```ts
+// --- Demonstration of imports ---
+
+// Importing named exports and the default export
+import defaultAnimal, { person, add } from './module';
+
+// Importing everything from the module as an alias
+import * as Module from './module';
+
 interface User {
   id: number
   firstName: string
@@ -70,8 +78,9 @@ function updateUser(id: number, update: Partial<User>) {
 }
 ```
 
+</AutoFitText>
+
 ---
-layout: center
 class: "text-center"
 ---
 

@@ -1,7 +1,36 @@
 :root {
-  /* default theme color */
-  /* can be overrided by uses `themeConfig` option */
-  --slidev-theme-primary: #5d8392;
+  --slidev-code-border: rgba(51, 51, 51, 0.15);
+  --slidev-code-radius: 6px;
+  --slidev-code-padding: 10px;
+  --shiki-light: #24292e;
+  --shiki-dark: #e1e4e8;
+  --shiki-light-bg: #fff;
+  --shiki-dark-bg: #24292e;
+}
+
+html.dark {
+  --slidev-code-border: rgba(204, 204, 204, 0.15);
+}
+
+.slidev-code {
+  border: 1px solid var(--slidev-code-border);
+}
+
+.slidev-code::before {
+  content: "";
+  display: block;
+  background-size: 40px;
+  margin-bottom: calc(2 * var(--slidev-code-padding));
+  border-radius: 50%;
+  background: #ff0800 no-repeat 10px 10px;
+  width: 12px;
+  height: 12px;
+  -webkit-box-shadow:
+    20px 0 #fdbc40,
+    40px 0 #35cd4b;
+  box-shadow:
+    20px 0 #fdbc40,
+    40px 0 #35cd4b;
 }
 
 .slidev-layout.cover,

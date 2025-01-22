@@ -22,15 +22,16 @@
   "devDependencies": {
     "@slidev/cli": "^51.0.2"
   },
-  "//": "Learn more: https://sli.dev/guide/write-theme.html",
   "slidev": {
-    "colorSchema": "dark",
+    "colorSchema": "both",
     "defaults": {
 			"aspectRatio": "9/16",
+			"layout": "portrait",
+			"codeCopy": false,
       "fonts": {
         "sans": "Nunito Sans",
         "mono": "Fira Code"
-      }
+			}
     }
   }
 }

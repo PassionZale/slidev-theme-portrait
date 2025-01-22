@@ -3,7 +3,9 @@ import { defineShikiSetup } from '@slidev/types'
 
 export default defineShikiSetup((): ShikiSetupReturn => {
   return {
-		// https://shiki.style/themes
-    theme: "dracula-soft",
+		themes: {
+			light: "github-light",
+			dark: "dracula"
+		}
   }
 })
