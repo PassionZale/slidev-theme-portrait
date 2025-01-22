@@ -4,6 +4,9 @@
 
 A slide portrait theme for record portrait video.
 
+> [!WARNING]
+> This is work in progress.
+
 ## Install
 
 Add the following frontmatter to your `slides.md`. Start Slidev then it will prompt you to install the theme automatically.
@@ -19,17 +22,19 @@ Learn more about [how to use a theme](https://sli.dev/guide/theme-addon#use-them
 This theme overrided the following configs:
 
 ```json
-"slidev": {
-	"colorSchema": "both",
-	"defaults": {
-		"aspectRatio": "9/16",
-		"layout": "portrait",
-		"codeCopy": false,
-		"fonts": {
-			"sans": "Nunito Sans",
-			"mono": "Fira Code"
-		}
-	}
+{
+  "slidev": {
+    "colorSchema": "both",
+    "defaults": {
+      "aspectRatio": "9/16",
+      "layout": "portrait",
+      "codeCopy": false,
+      "fonts": {
+        "sans": "Nunito Sans",
+        "mono": "Fira Code"
+      }
+    }
+  }
 }
 ```
 
@@ -38,17 +43,17 @@ This theme overrided the following configs:
 This theme overrided the following shiki configs:
 
 ```ts
-import type { ShikiSetupReturn } from '@slidev/types'
-import { defineShikiSetup } from '@slidev/types'
+import type { ShikiSetupReturn } from "@slidev/types";
+import { defineShikiSetup } from "@slidev/types";
 
 export default defineShikiSetup((): ShikiSetupReturn => {
   return {
-		themes: {
-			light: "github-light",
-			dark: "dracula"
-		}
-  }
-})
+    themes: {
+      light: "github-light",
+      dark: "dracula",
+    },
+  };
+});
 ```
 
 ## Variables
