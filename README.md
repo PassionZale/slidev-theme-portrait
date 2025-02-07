@@ -107,7 +107,7 @@ This theme provides the following layouts:
 <pre><code>---
 theme: <b>@code-sugar/slidev-theme-portrait</b>
 defaults:
-&nbsp;&nbsp;layout: <b>portrait</b>
+&emsp;&emsp;layout: <b>portrait</b>
 ---</code></pre>
 
 ## Components
