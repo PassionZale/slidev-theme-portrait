@@ -1,5 +1,6 @@
 ---
 theme: ./
+layout: "portrait"
 ---
 
 # Slidev Theme Starter
@@ -12,6 +13,8 @@ Presentation slides for developers
   </span>
 </div>
 
+---
+layout: "portrait"
 ---
 
 # What is Slidev?
@@ -32,6 +35,8 @@ Slidev is a slide maker and presentation tool designed for developers. It includ
 Read more about [Why Slidev?](https://sli.dev/guide/why)
 
 ---
+layout: "portrait"
+---
 
 # Navigation
 
@@ -47,6 +52,7 @@ Hover on the bottom-left corner to see the navigation's controls panel
 | <kbd>down</kbd> | next slide |
 
 ---
+layout: "portrait"
 ---
 
 # Code
@@ -81,7 +87,7 @@ function updateUser(id: number, update: Partial<User>) {
 </AutoFitText>
 
 ---
-class: "text-center"
+layout: "portrait"
 ---
 
 # Learn More
