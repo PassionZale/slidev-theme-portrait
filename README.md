@@ -27,7 +27,8 @@ This theme overrided the following configs:
     "colorSchema": "both",
     "defaults": {
       "aspectRatio": "9/16",
-      "layout": "portrait",
+			"transition": "fade-out",
+			"canvasWidth": 720,
       "codeCopy": false,
       "fonts": {
         "sans": "Nunito Sans",
@@ -62,6 +63,8 @@ This theme overrided the following root variables:
 
 ```css
 :root {
+	--slidev-code-font-size: 16px;
+	--slidev-code-line-height: 22px;
   --slidev-code-border: rgba(51, 51, 51, 0.15);
   --slidev-code-radius: 6px;
   --slidev-code-padding: 10px;
@@ -101,7 +104,11 @@ html.dark {
 
 This theme provides the following layouts:
 
-> TODO:
+<pre><code>---
+theme: <b>@code-sugar/slidev-theme-portrait</b>
+defaults:
+&nbsp;layouts: <b>portrait</b>
+---</code></pre>
 
 ## Components
 

@@ -15,7 +15,7 @@ Presentation slides for developers
 </div>
 
 ---
-
+#
 ---
 
 # What is Slidev?
@@ -36,7 +36,7 @@ Slidev is a slide maker and presentation tool designed for developers. It includ
 Read more about [Why Slidev?](https://sli.dev/guide/why)
 
 ---
-
+#
 ---
 
 # Navigation
@@ -53,7 +53,7 @@ Hover on the bottom-left corner to see the navigation's controls panel
 | <kbd>down</kbd>                                      | next slide                  |
 
 ---
-
+#
 ---
 
 # Code
@@ -88,7 +88,7 @@ function updateUser(id: number, update: Partial<User>) {
 </AutoFitText>
 
 ---
-
+#
 ---
 
 # Learn More
