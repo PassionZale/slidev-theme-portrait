@@ -27,8 +27,8 @@ This theme overrided the following configs:
     "colorSchema": "both",
     "defaults": {
       "aspectRatio": "9/16",
-			"transition": "fade-out",
-			"canvasWidth": 720,
+      "transition": "fade-out",
+      "canvasWidth": 720,
       "codeCopy": false,
       "fonts": {
         "sans": "Nunito Sans",
@@ -65,13 +65,13 @@ This theme overrided the following root variables:
 :root {
 	--slidev-code-font-size: 16px;
 	--slidev-code-line-height: 22px;
-  --slidev-code-border: rgba(51, 51, 51, 0.15);
-  --slidev-code-radius: 6px;
-  --slidev-code-padding: 10px;
-  --shiki-light: #24292e;
-  --shiki-dark: #e1e4e8;
-  --shiki-light-bg: #fff;
-  --shiki-dark-bg: #24292e;
+	--slidev-code-border: rgba(51, 51, 51, 0.15);
+	--slidev-code-radius: 6px;
+	--slidev-code-padding: 10px;
+	--shiki-light: #24292e;
+	--shiki-dark: #e1e4e8;
+	--shiki-light-bg: #fff;
+	--shiki-dark-bg: #24292e;
 }
 
 html.dark {
@@ -107,7 +107,7 @@ This theme provides the following layouts:
 <pre><code>---
 theme: <b>@code-sugar/slidev-theme-portrait</b>
 defaults:
-&nbsp;layouts: <b>portrait</b>
+&nbsp;&nbsp;layout: <b>portrait</b>
 ---</code></pre>
 
 ## Components
