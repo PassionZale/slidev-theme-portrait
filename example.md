@@ -1,6 +1,7 @@
 ---
 theme: ./
-layout: "portrait"
+defaults:
+  layout: portrait
 ---
 
 # Slidev Theme Starter
@@ -14,7 +15,7 @@ Presentation slides for developers
 </div>
 
 ---
-layout: "portrait"
+
 ---
 
 # What is Slidev?
@@ -35,7 +36,7 @@ Slidev is a slide maker and presentation tool designed for developers. It includ
 Read more about [Why Slidev?](https://sli.dev/guide/why)
 
 ---
-layout: "portrait"
+
 ---
 
 # Navigation
@@ -44,15 +45,15 @@ Hover on the bottom-left corner to see the navigation's controls panel
 
 ## Keyboard Shortcuts
 
-|     |     |
-| --- | --- |
-| <kbd>space</kbd> / <kbd>tab</kbd> / <kbd>right</kbd> | next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
+|                                                      |                             |
+| ---------------------------------------------------- | --------------------------- |
+| <kbd>space</kbd> / <kbd>tab</kbd> / <kbd>right</kbd> | next animation or slide     |
+| <kbd>left</kbd> / <kbd>shift</kbd><kbd>space</kbd>   | previous animation or slide |
+| <kbd>up</kbd>                                        | previous slide              |
+| <kbd>down</kbd>                                      | next slide                  |
 
 ---
-layout: "portrait"
+
 ---
 
 # Code
@@ -65,29 +66,29 @@ Use code snippets and get the highlighting directly!
 // --- Demonstration of imports ---
 
 // Importing named exports and the default export
-import defaultAnimal, { person, add } from './module';
+import defaultAnimal, { person, add } from "./module";
 
 // Importing everything from the module as an alias
-import * as Module from './module';
+import * as Module from "./module";
 
 interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
+  id: number;
+  firstName: string;
+  lastName: string;
+  role: string;
 }
 
 function updateUser(id: number, update: Partial<User>) {
-  const user = getUser(id)
-  const newUser = { ...user, ...update }
-  saveUser(id, newUser)
+  const user = getUser(id);
+  const newUser = { ...user, ...update };
+  saveUser(id, newUser);
 }
 ```
 
 </AutoFitText>
 
 ---
-layout: "portrait"
+
 ---
 
 # Learn More

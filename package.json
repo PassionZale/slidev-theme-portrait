@@ -38,7 +38,6 @@
     "defaults": {
       "aspectRatio": "9/16",
 			"canvasWidth": 720,
-      "layout": "portrait",
       "codeCopy": false,
       "fonts": {
         "sans": "Nunito Sans",
