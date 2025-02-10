@@ -34,3 +34,7 @@ html.dark {
     20px 0 #fdbc40,
     40px 0 #35cd4b;
 }
+
+html.dark .slidev-layout.portrait {
+	background-color: #000;
+}

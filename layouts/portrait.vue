@@ -4,7 +4,7 @@
     :class="{ 'border-dashed border-2 border-green-500': isGuideLineActive }"
   >
     <div
-      :class="{ 'border-dashed border-2 border-green-500': isGuideLineActive }"
+      :class="{ 'border-dashed border-2 border-green-500 h-full': isGuideLineActive }"
     >
       <slot></slot>
     </div>

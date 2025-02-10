@@ -27,7 +27,6 @@ This theme overrided the following configs:
     "colorSchema": "both",
     "defaults": {
       "aspectRatio": "9/16",
-      "transition": "fade-out",
       "canvasWidth": 720,
       "codeCopy": false,
       "fonts": {
