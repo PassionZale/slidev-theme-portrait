@@ -117,6 +117,12 @@ defaults:
 &emsp;&emsp;layout: <b>portrait</b>
 ---</code></pre>
 
+```css
+html.dark .slidev-layout.portrait {
+	background-color: #000;
+}
+```
+
 ## Components
 
 This theme provides the following components:
