@@ -39,6 +39,14 @@ This theme overrided the following configs:
 }
 ```
 
+## ShortCuts
+
+<kbd>l</kbd> - Toggle Guidelines
+
+## ContextMenu
+
+`Toggle Guidelines`
+
 ## Shiki
 
 This theme overrided the following shiki configs:

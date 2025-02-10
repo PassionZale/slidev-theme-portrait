@@ -1,14 +1,18 @@
 <template>
-  <div class="slidev-layout">
-    <div class="wrapper">
+  <div
+    class="slidev-layout portrait"
+    :class="{ 'border-dashed border-2 border-green-500': isGuideLineActive }"
+  >
+    <div
+      :class="{ 'border-dashed border-2 border-green-500': isGuideLineActive }"
+    >
       <slot></slot>
     </div>
   </div>
 </template>
 
-<style scoped>
-.wrapper {
-  padding: 20px;
-  border: 1px solid red;
-}
-</style>
+<script setup lang="ts">
+import { useGuideLineStore } from "../setup/useGuideLineStore";
+
+const { isGuideLineActive } = useGuideLineStore();
+</script>
