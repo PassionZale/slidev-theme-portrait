@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/@code-sugar/slidev-theme-portrait?color=3AB9D4&label=)](https://www.npmjs.com/package/@code-sugar/slidev-theme-portrait)
 
-一个用于录制竖屏视频的 Slidev 主题。
+一个用于录制纵向视频的 Slidev 主题。
 
 > [!WARNING]
 > 此主题仍在开发中。
@@ -35,7 +35,7 @@ theme: <b>@code-sugar/slidev-theme-portrait</b>
     // 主题支持亮色和暗色两种模式
     colorSchema: "both",
     defaults: {
-      // 默认比例（竖屏）
+      // 默认比例（纵向）
       aspectRatio: "9/16",
       // 默认宽度
       canvasWidth: 720,
