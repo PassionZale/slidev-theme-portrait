@@ -24,14 +24,15 @@
     "build": "slidev build example.md",
     "dev": "slidev example.md --open",
     "export": "slidev export example.md",
-    "screenshot": "slidev export example.md --format png",
+    "screenshot": "slidev export example.md --dark --format png",
     "release": "npm publish --registry https://registry.npmjs.org --access public"
   },
   "dependencies": {
     "@slidev/types": "^51.0.2"
   },
   "devDependencies": {
-    "@slidev/cli": "^51.0.2"
+    "@slidev/cli": "^51.0.2",
+    "playwright-chromium": "^1.50.1"
   },
   "slidev": {
     "colorSchema": "both",
