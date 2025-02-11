@@ -2,53 +2,73 @@
 
 [![NPM version](https://img.shields.io/npm/v/@code-sugar/slidev-theme-portrait?color=3AB9D4&label=)](https://www.npmjs.com/package/@code-sugar/slidev-theme-portrait)
 
-A slide portrait theme for record portrait video.
+一个用于录制竖屏视频的 Slidev 主题。
 
 > [!WARNING]
-> This is work in progress.
+> 此主题仍在开发中。
 
-## Install
+## 在线预览
 
-Add the following frontmatter to your `slides.md`. Start Slidev then it will prompt you to install the theme automatically.
+> TODO:
+
+## 视频指南
+
+> TODO:
+
+## 安装
+
+在 `slides.md` 中添加主题配置，启动 Slidev 后，它会自动提示你安装主题。
 
 <pre><code>---
 theme: <b>@code-sugar/slidev-theme-portrait</b>
 ---</code></pre>
 
-Learn more about [how to use a theme](https://sli.dev/guide/theme-addon#use-theme).
+更多关于如何使用主题的信息，请参阅 [如何使用主题](https://sli.dev/guide/theme-addon#use-theme)。
 
-## Configs
+## 配置
 
-This theme overrided the following configs:
+此主题重写了以下配置：
 
-```json
+```json5
 {
-  "slidev": {
-    "colorSchema": "both",
-    "defaults": {
-      "aspectRatio": "9/16",
-      "canvasWidth": 720,
-      "codeCopy": false,
-      "fonts": {
-        "sans": "Nunito Sans",
-        "mono": "Fira Code"
-      }
-    }
-  }
+  slidev: {
+    // 主题支持亮色和暗色两种模式
+    colorSchema: "both",
+    defaults: {
+      // 默认比例（竖屏）
+      aspectRatio: "9/16",
+      // 默认宽度
+      canvasWidth: 720,
+      // 禁用代码复制
+      codeCopy: false,
+      fonts: {
+        sans: "Nunito Sans",
+        // 代码字体使用 Fira Code
+        mono: "Fira Code",
+      },
+    },
+  },
 }
 ```
 
-## ShortCuts
+## 自定义功能
 
-<kbd>l</kbd> - Toggle Guidelines
+> [!WARNING]
+> 演讲者模式下不可用。
 
-## ContextMenu
+增加了 Guidelines (辅助线) 功能，便于在 OBS 中标识录制窗口的裁剪区块。
 
-`Toggle Guidelines`
+### 快捷键
+
+按 <kbd>l</kbd> 键显示或隐藏辅助线。
+
+### 右键菜单
+
+<kbd>Toggle Guidelines</kbd> - 显示或辅助线。
 
 ## Shiki
 
-This theme overrided the following shiki configs:
+此主题重写了以下 shiki 配置：
 
 ```ts
 import type { ShikiSetupReturn } from "@slidev/types";
@@ -57,24 +77,32 @@ import { defineShikiSetup } from "@slidev/types";
 export default defineShikiSetup((): ShikiSetupReturn => {
   return {
     themes: {
+      // 亮色主题下使用 "github-light"
       light: "github-light",
+      // 暗色主题下使用 "dracula"
       dark: "dracula",
     },
   };
 });
 ```
 
-## Variables
+## 变量
 
-This theme overrided the following root variables:
+此主题重写了以下根变量：
 
 ```css
 :root {
+  /* 增大代码块的字体大小 */
   --slidev-code-font-size: 16px;
+  /* 增大代码块的字体行高 */
   --slidev-code-line-height: 22px;
+  /** 明亮模式下代码块的边框颜色 */
   --slidev-code-border: rgba(51, 51, 51, 0.15);
+  /** 为代码块增加圆角 */
   --slidev-code-radius: 6px;
+  /** 增大代码块的内边距 */
   --slidev-code-padding: 10px;
+  /** shiki 明亮和暗黑模式下的字体颜色和背景色 */
   --shiki-light: #24292e;
   --shiki-dark: #e1e4e8;
   --shiki-light-bg: #fff;
@@ -82,13 +110,16 @@ This theme overrided the following root variables:
 }
 
 html.dark {
+  /** 暗黑模式下代码块的边框颜色 */
   --slidev-code-border: rgba(204, 204, 204, 0.15);
 }
 
+/** 为代码块增加边框 */
 .slidev-code {
   border: 1px solid var(--slidev-code-border);
 }
 
+/** 为代码块增加 Mac 风格的 Window Control 按钮 */
 .slidev-code::before {
   content: "";
   display: block;
@@ -107,9 +138,9 @@ html.dark {
 }
 ```
 
-## Layouts
+## 布局
 
-This theme provides the following layouts:
+此主题提供了以下布局：
 
 <pre><code>---
 theme: <b>@code-sugar/slidev-theme-portrait</b>
@@ -118,21 +149,14 @@ defaults:
 ---</code></pre>
 
 ```css
+/** 暗黑模式下背景为纯黑色 */
 html.dark .slidev-layout.portrait {
-	background-color: #000;
+  background-color: #000;
 }
 ```
 
-## Components
+## 组件
 
-This theme provides the following components:
+此主题提供了以下组件：
 
 > TODO:
-
-## Contributing
-
-- `npm install`
-- `npm run dev` to start theme preview of `example.md`
-- Edit the `example.md` and style to see the changes
-- `npm run export` to generate the preview PDF
-- `npm run screenshot` to generate the preview PNG
