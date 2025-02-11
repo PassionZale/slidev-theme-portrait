@@ -51,12 +51,14 @@ theme: <b>@code-sugar/slidev-theme-portrait</b>
 }
 ```
 
-## 自定义功能
+## 辅助线
 
 > [!WARNING]
 > 演讲者模式下不可用。
 
-增加了 Guidelines (辅助线) 功能，便于在 OBS 中标识录制窗口的裁剪区块。
+增加了 Guidelines (辅助线) 功能，便于在 OBS 中标识录制窗口的裁剪区块，避免成片出现黑边。
+
+**在正式开始录制时，你应该关闭辅助线。**
 
 ### 快捷键
 
@@ -64,7 +66,7 @@ theme: <b>@code-sugar/slidev-theme-portrait</b>
 
 ### 右键菜单
 
-<kbd>Toggle Guidelines</kbd> - 显示或辅助线。
+<kbd>Toggle Guidelines</kbd> - 显示或隐藏辅助线。
 
 ## Shiki
 
@@ -147,6 +149,8 @@ theme: <b>@code-sugar/slidev-theme-portrait</b>
 defaults:
 &emsp;&emsp;layout: <b>portrait</b>
 ---</code></pre>
+
+推荐使用**暗黑模式**进行录制，因为竖屏在手机上播放，为了兼容非全屏时的“黑边”，此主题将背景设置为纯黑色。
 
 ```css
 /** 暗黑模式下背景为纯黑色 */
